@@ -1,0 +1,145 @@
+body {
+    min-height: 100%;
+    /*2000px;*/
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    color: #3a879c;
+    font-size: 22px;
+}
+
+r-header .navbar-subbrand {
+    font-size: 15pt;
+    color: #5abac3;
+    float: none;
+}
+
+/* The separator lines used between container sections 
+Kontuz: The 0px box-shadow gives you a 0.5px line which you can't get with a border */
+hr.section-separator {
+    min-width: 100%;
+    margin-top: 15px !important;
+    margin-bottom: 0.5px !important;
+    box-shadow: 0px 0px 0px #7300e6;
+    /*#979797;*/
+}
+
+/* style for active menu item on navbar */
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: white;
+    color: #126162;
+    /*#974D56;*/
+    padding: 15px 15px 3px 15px;
+    box-shadow: 0px 2px 0px;
+    -webkit-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+.face {
+    padding: 1%;
+    width: 100%;
+    min-width: 50pt;
+    max-width: 140pt;
+}
+
+#footer {
+    padding-top: 40px;
+}
+
+.icon {
+    width: 30px;
+}
+
+a {
+    color: #4b8e9d;
+    /*#9B9B9B;*/
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #615ddb;
+    text-decoration: none;
+    font-weight: medium;
+}
+
+/* Styles for the individual rows and items */
+
+.row>h2 {
+    font-size: large;
+    font-weight: bold;
+    /* color: #278088; */
+}
+
+.text {
+    color: #7300e6;
+    /*#9B9B9B;*/
+    font-weight: "medium";
+}
+
+.paper-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 1pt;
+    /*     border: 2px solid white;*/
+    border-bottom: 1px dashed #bbbbbb;
+
+    /*	padding-top:15px;
+	padding-bottom:5px;
+	border-radius: 4pt;
+	border: 1px solid white;*/
+}
+
+/* Alternate row coloring */
+.row .paper-item:nth-of-type(odd) {
+    /*    background-color:#e6e6ff;/*#e6ecff;/*rgba(194,132,114,0.05);8?*/
+    background-color: white;
+}
+
+.row .paper-item:nth-of-type(even) {
+    background-color: white;
+}
+
+.paper-title {
+    font-family: 'AvenirNext-Italic', avenir, helvetica, arial, sans-serif;
+}
+
+/*.paper-type{
+	/*font-family:'AvenirNext-Medium';*/
+/*}
+
+/* Egiteko: List heading eg: Control and Information Theory */
+.row>h4 {
+    /*color: #9B9B9B;*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .row>h4 {
+        margin-left: 5%;
+    }
+}
+
+.image-fluid{
+    /* margin-top: -1000px; */
+    margin-bottom: 100px;
+}
+
+/* Egiteko: Section heading eg: Research, Teaching, Etc.; */
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
