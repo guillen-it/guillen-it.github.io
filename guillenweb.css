@@ -142,4 +142,144 @@ h3 {
     margin-bottom: 20px;
 }
 
+/* J list definition */
+ol.j-list {
+list-style-type: none;
+list-style: none;
+padding-left: 0;
+margin-left: 0;
+}
+ol.j-list li {
+padding-left: 60px;
+position: relative;
+/*counter-increment: list-item -1;*/
+}
+ol.j-list li::before {
+content: "J" counter(list-item) ".";
+font-weight: bold;
+position: absolute;
+width: 45px;
+text-align: right;
+display: inline-block;
+left: 0;
+}
 
+
+/* C list definition */
+ol.c-list {
+list-style-type: none;
+list-style: none;
+padding-left: 0;
+margin-left: 0px;
+
+}
+ol.c-list li {
+padding-left: 60px;
+position: relative;
+/*counter-increment: list-item -1;*/
+}
+ol.c-list li::before {
+content: "C" counter(list-item) ".";
+font-weight: bold;
+position: absolute;
+left: 0px;
+width: 45px;
+text-align: right;
+display: inline-block;
+}
+
+/* B list definition */
+ol.b-list {
+list-style-type: none;
+list-style: none;
+padding-left: 0;
+margin-left: 0px;
+
+}
+ol.b-list li {
+padding-left: 60px;
+position: relative;
+/*counter-increment: list-item -1;*/
+}
+ol.b-list li::before {
+content: "B" counter(list-item) ".";
+font-weight: bold;
+position: absolute;
+left: 0px;
+width: 45px;
+text-align: right;
+display: inline-block;
+}
+
+
+/* BC list definition */
+ol.bc-list {
+list-style-type: none;
+list-style: none;
+padding-left: 0;
+margin-left: 0px;
+
+}
+ol.bc-list li {
+padding-left: 60px;
+position: relative;
+/*counter-increment: list-item -1;*/
+}
+ol.bc-list li::before {
+content: "BC" counter(list-item) ".";
+font-weight: bold;
+position: absolute;
+left: 0px;
+width: 45px;
+text-align: right;
+display: inline-block;
+}
+
+
+
+
+/* P list definition */
+ol.p-list {
+list-style-type: none;
+list-style: none;
+padding-left: 0;
+margin-left: 0px;
+
+}
+ol.p-list li {
+padding-left: 60px;
+position: relative;
+/*counter-increment: list-item -1;*/
+}
+ol.p-list li::before {
+content: "P" counter(list-item) ".";
+font-weight: bold;
+position: absolute;
+left: 0px;
+width: 45px;
+text-align: right;
+display: inline-block;
+}
+
+/* PP list definition */
+ol.pp-list {
+list-style-type: none;
+list-style: none;
+padding-left: 0;
+margin-left: 0px;
+
+}
+ol.pp-list li {
+padding-left: 60px;
+position: relative;
+/*counter-increment: list-item -1;*/
+}
+ol.pp-list li::before {
+content: "PP" counter(list-item) ".";
+font-weight: bold;
+position: absolute;
+left: 0px;
+width: 45px;
+text-align: right;
+display: inline-block;
+}
