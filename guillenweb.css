@@ -1,16 +1,26 @@
 body {
     min-height: 100%;
-    /*2000px;*/
-    padding-top: 20px;
+    padding-top: 0;
     padding-left: 20px;
+    padding-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    padding-bottom: 0;
+    margin-bottom: 8px;
 }
 
 .navbar-brand {
     color: #3a879c;
     font-size: 22px;
+    position: relative;
+    padding-bottom: 8px;
 }
+
 
 r-header .navbar-subbrand {
     font-size: 15pt;
@@ -18,7 +28,7 @@ r-header .navbar-subbrand {
     float: none;
 }
 
-/* The separator lines used between container sections 
+/* The separator lines used between container sections
 Kontuz: The 0px box-shadow gives you a 0.5px line which you can't get with a border */
 hr.section-separator {
     min-width: 100%;
@@ -72,12 +82,24 @@ a:focus {
     font-weight: medium;
 }
 
-/* Styles for the individual rows and items */
+/* Profile photo */
+.profile-photo {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
 
+/* Section headings */
 .row>h2 {
     font-size: large;
     font-weight: bold;
-    /* color: #278088; */
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+/* Content sections - more breathing room */
+.content-section {
+    padding-top: 12px;
+    padding-bottom: 4px;
 }
 
 .text {
@@ -284,21 +306,24 @@ text-align: right;
 display: inline-block;
 }
 
-/* Dark mode toggle button */
+/* Dark mode toggle */
 #dark-mode-toggle {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
     padding: 4px 8px;
-    margin-left: 12px;
+    margin-left: auto;
     line-height: 1;
     border-radius: 50%;
     transition: background-color 0.2s ease;
+    opacity: 0.5;
 }
 #dark-mode-toggle:hover {
     background-color: rgba(0, 0, 0, 0.08);
+    opacity: 1;
 }
+
 
 /* Dark mode styles */
 body.dark-mode {
@@ -321,6 +346,9 @@ body.dark-mode .nav-link {
 body.dark-mode .nav-link:hover {
     color: #6dd4e4;
 }
+body.dark-mode .profile-photo {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
 body.dark-mode .paper-item {
     border-bottom-color: #444;
 }
@@ -342,3 +370,5 @@ body.dark-mode #dark-mode-toggle {
 body.dark-mode #dark-mode-toggle:hover {
     background-color: rgba(255, 255, 255, 0.12);
 }
+
+/* site design courtesy of Iñaki Esnaola, 2025 */
